@@ -1,0 +1,260 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(175, 88, 68);
+}
+
+header, footer {
+    background-color: rgb(175, 88, 68);
+    color: white;
+    padding-top: 10px;
+    height: 40px;
+}
+
+section {
+    background-color: rgba(211, 212, 207);
+    padding: 20px;
+    display: flex;
+    /* height: 80vh; */
+    height: 560px;
+}
+
+p {
+    color: rgb(214, 215, 210);
+    font-family: arial black;
+    font-size: 100px;
+    text-align: center;
+    margin: auto;
+    text-shadow: 15px 15px rgb(175, 88, 68, 0.7);
+}
+
+.back { 
+    background-image: url("back.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+/* Social media buttons in the footer */
+.social img {
+    width: 30px;
+}
+
+.social li {
+    display: inline-block;
+    float: none;
+    width: 50px;
+    margin-right: 20px;
+    margin-left: 20px;;
+}
+
+.social {
+    text-align: center;
+}
+
+.social li a:hover {
+    background-color: rgba(255, 255, 255, 0);
+}
+
+/* HOME */
+.brock {
+    background-image: url("Brock.gif");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.brock p{
+    color: white;
+    -webkit-text-stroke-width: 3px;
+    -webkit-text-stroke-color: rgb(221, 221, 221);
+}
+
+audio {
+    width: 250px;
+    height: 30px;
+    position: absolute;
+}
+
+/* ABOUT US */
+div { 
+    background-color: black;
+    width: 30%;
+    height: 90%;
+    margin: auto;
+    color: white;
+    border: solid 3px rgb(255, 255, 255);
+}
+
+.nariai {
+    width: 45%;
+    background-image: url("grupe.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: background-image 150ms ease-in-out;
+    box-shadow: 15px 15px rgb(175, 88, 68, 0.7);
+}
+
+.info {
+    width: 50%;
+    border: solid 3px rgb(255, 255, 255);
+    box-shadow: 15px 15px rgb(175, 88, 68, 0.7);
+    background-color: rgb(235, 235, 235);
+}
+
+.info p {
+    font-size: 1.44vw;
+    text-align: justify;
+    padding: 40px;
+    text-shadow: none;
+    color: rgb(175, 88, 68);
+}
+
+/* NAVIGATION */
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+li {
+    float: left;
+    width: 150px;
+    margin-left: 30px;
+    font-family: Arial Black;
+
+}
+
+li a{
+    display: block;
+    text-align: center;
+    color: white;
+    text-decoration: none;
+    padding: 5px;
+}
+
+li a:hover {
+    background-color: rgba(255, 255, 255, 0.15);
+    border-radius: 3px;
+    transition: all 200ms ease-in-out;
+}
+
+/* ALBUMS */
+.albums div {
+    width: 22%;
+    height: 55%;
+}
+
+.a, .b, .c, .d {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    box-shadow: 15px 15px rgb(175, 88, 68, 0.7);
+    display: table;
+}
+
+.a {
+    background-image: url("one.png");
+}
+
+.b {
+    background-image: url("two.jpg");
+}
+
+.c {
+    background-image: url("three.jpg");
+}
+
+.d {
+    background-image: url("four.jpg");
+}
+
+.aa, .bb, .cc, .dd {
+    background-color: rgba(255, 255, 255, 0.7);
+    font-size: 15px;
+    color: rgb(175, 88, 68);
+    text-shadow: none;
+    vertical-align: middle;
+    display: table-cell;
+    opacity: 0;
+    transition: opacity 200ms ease-in-out;
+}
+
+.a:hover .aa{
+    opacity: 1;
+}
+
+.b:hover .bb{
+    opacity: 1;
+}
+
+.c:hover .cc{
+    opacity: 1;
+}
+
+.d:hover .dd{
+    opacity: 1;
+}
+
+@media screen and (max-width: 1000px) and (max-height: 1024px){
+    p {
+        font-size: 60px;
+        text-shadow: 9px 9px rgb(175, 88, 68, 0.7);
+    }
+
+    .info p {
+        font-size: 1.7vw;
+    }
+}
+
+@media screen and (max-width: 600px) and (max-height: 1024px){
+    li {
+        width: 130px;
+    }
+
+    p {
+        font-size: 40px;
+        text-shadow: 7px 7px rgb(175, 88, 68, 0.7);
+    }
+
+    .back {
+        flex-direction: column;
+    }
+
+    .nariai, .info {
+        width: 90%;
+        height: 45%;
+    }
+
+    .nariai {
+        background-size: 100% auto;
+    }
+
+    .info {
+        margin-top: 30px;
+    }
+
+    .info p {
+        font-size: 1.85vw;
+    }
+
+    .albums {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 50% 50%;
+    }
+
+    .albums div {
+        width: 80%;
+        height: 85%;
+        background-size: auto 100%;
+    }
+
+    .aa, .bb, .cc, .dd {
+        font-size: 12px;
+    }
+
+}
+
